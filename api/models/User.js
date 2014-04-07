@@ -1,7 +1,4 @@
 var bcrypt;
-
-bcrypt = void 0;
-
 bcrypt = require("bcrypt");
 
 module.exports = {
