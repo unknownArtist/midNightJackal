@@ -7,14 +7,18 @@ module.exports = {
 	replyToTopic: function(req, res){
 
 	GSTopicsReplies.create({
-		user_id:     req.param("user_id"),
-		gs_topic_id: req.param("gs_topic_id"),
+		user_id: String(req.session.user_id),
+		gs_topic_id: req.param("topicId"),
 		body: req.param("body")
     }, function(err, reply) {
       if (err) {
         res.json({ status: 404, error: err });
       }else {
-        res.json({status: 200,message: "reply submitted",reply: reply });
+        res.json({
+          status: 200,
+          message: "reply submitted",
+          reply: reply
+        });
       }
     });
 	},

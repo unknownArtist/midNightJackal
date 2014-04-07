@@ -11,9 +11,18 @@ module.exports = {
 	tableName: 'gupshup_topic_replies',
 	attributes: {
 
-    gs_topic_id: 'string',
-	user_id: 'string',
-    body: 'text',
+    gs_topic_id:  {
+		type: 'string',
+		required: true
+	},
+	user_id: {
+		type: 'string',
+		required: true
+	},
+    body:{
+		type: 'text',
+		required: true
+    },
     // agree: 'int',
     // partial_agree: 'int',
     // dont_agree: 'int'

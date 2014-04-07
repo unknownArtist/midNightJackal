@@ -41,8 +41,10 @@ module.exports.routes = {
   'post /auth/login':     { controller: 'auth/Auth',action:'authenticate' },
  
  /* Routes for creating GupShup Topics */
-  'get  /topic/new':               { controller: 'Forum/GSTopicController', action:'index' },
-  'post /topic/create':            { controller: 'Forum/GSTopicController', action:'createTopic' },
+  'get  /topics/all':              { controller: 'Forum/GSTopicController', action:'index' },
+  'get  /topic/new':               { controller: 'Forum/GSTopicController', action:'createTopic' },
+  'get  /topic/:id/:slug':   { controller: 'Forum/GSTopicController', action:'showTopic' },
+  'post /topic/create':            { controller: 'Forum/GSTopicController', action:'storeTopic' },
   'post /topic/update':            { controller: 'Forum/GSTopicController', action:'updateTopic' },
   'get  /topic/delete/request':    { controller: 'Forum/GSTopicController', action:'deleteRequest' },
   'get  /topic/like':              { controller: 'Forum/GSTopicController', action:'likeTopic' },

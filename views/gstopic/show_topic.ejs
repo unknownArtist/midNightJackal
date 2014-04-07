@@ -1,0 +1,18 @@
+<ul>
+	<% _.each(topic, function(topic){ %>
+		<li><%= topic.title %></li>
+		<%= topic.body %>
+	<% }) %>
+	
+</ul>
+
+<div id="TopicReplies">
+	<% _.each(replies, function(reply) { %>
+		<%= reply.body %><br>
+	<% }) %>
+</div>
+<form>
+	<textarea class="form-control" id="replyBody" placeholder="Write your answer"></textarea>
+	<input class="form-control" id="topicId" type="hidden" value=<%= req.param("id") %> /><br>
+	<button class="btn btn-success" id="writeAnswer">Answer</button>
+</form>

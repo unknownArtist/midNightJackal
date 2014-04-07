@@ -1,12 +1,32 @@
 module.exports = {
 
   index: function(req, res) {
-    return res.send("i am forum");
+    GSTopic.find().exec(function(err, topics){
+       res.view("gstopic/topics",{topics: topics });
+    });
   },
-  createTopic: function(req, res) {
+  showTopic: function(req, res){
+    var replies = null;
+    GSTopic.find()
+           .where({id: req.param('id')})
+           .exec(function(err, topic){
+              GSTopicsReplies.find()
+                   .where({gs_topic_id: topic[0].id})
+                   .exec(function(err, replies){
+                      res.view("gstopic/show_topic",{topic: topic,replies: replies });
+                   });
+
+
+                
+            });
+  },
+  createTopic: function(req, res){
+    return res.view('gstopic/create_topic');
+  },
+  storeTopic: function(req, res) {
      GSTopic.create({
       title: req.param("title"),
-      user_id: req.param("user_id"),
+      user_id: req.session.user_id,
       slug: strToSlug(req.param("title")),
       body: req.param("body")
     }, function(err, topic) {
@@ -103,6 +123,7 @@ module.exports = {
 
     return str;
   };
+
 
 
 

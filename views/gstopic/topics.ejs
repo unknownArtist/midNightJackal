@@ -1,0 +1,15 @@
+<div>
+  <h2>All Topics</h2>
+  <a href="/topic/new" class="btn btn-success">Create New Topic</a>
+  <ul>
+  	<% if(topics.length > 0) { %>
+    	<% _.each(topics, function (topic) { %>
+    	<li><a href="/topic/<%= topic.id %>/<%=topic.slug%>"><%= topic.title %></a><p>Viewing 20 people</p></li>
+
+    	<% }) %>
+    <% } else { %>
+    	<br>
+		<p>No topics added yet</p>
+	<% } %>
+  </ul>
+</div>
