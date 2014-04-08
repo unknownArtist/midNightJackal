@@ -21,7 +21,7 @@ module.exports = {
             });
   },
   createTopic: function(req, res){
-    return res.view('gstopic/create_topic');
+     res.view('gstopic/create_topic');
   },
   storeTopic: function(req, res) {
      GSTopic.create({
@@ -100,6 +100,7 @@ module.exports = {
                           });
                         }
                       });
+
   },
 
 
