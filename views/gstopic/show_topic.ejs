@@ -1,31 +1,9 @@
-<<<<<<< HEAD
-<div class = "container_for_sign_in_up">
-	<div class = "sign">
-    <button class="btn btn-success" id="submitTopic">Sign up</button>
-    <p> Sign up using any of the following services. </p>
-    <div>
-    <a href="#"> <div class = "other_services">Facebook</div></a>
-    <a href="#"> <div class = "other_services">Linkedin</div></a>
-    <a href="#"> <div class = "other_services">Twitter</div></a>
-    <a href="#"> <div class = "other_services">Gmail</div></a>
-
-    </div>
-	</div>
-    
-	<div class = "sign">
-    <button class="btn btn-success" id="submitTopic">Sign in</button>
-    <p> Sign in with your email and password </p>
-    <input class="form-control" id="topicName" type="text" placeholder="Your email" /><br>
-    <input class="form-control" id="topicName" type="text" placeholder="Your password" /><br>
-    <a href="#">Forgot password</a>
-	</div>
-    </div>
 
 
 <ul class="list-unstyled text-fields">
-=======
+
 <ul>
->>>>>>> 7c80c58cdcb6d966617a0b7bbcde90d1663b2964
+
 	<% _.each(topic, function(topic){ %>
 		<li><%= topic.title %></li>
 		<%= topic.body %>
@@ -38,16 +16,8 @@
 		<%= reply.body %><br>
 	<% }) %>
 </div>
-<<<<<<< HEAD
-<form class = "text-fields">
-	<textarea class="form-control" id="replyBody" placeholder="Write your answer"></textarea>
-	<input class="form-control" id="topicId" type="hidden" value=<%= req.param("id") %> /><br>
-	<div>
-	<a><button class="btn btn-success" id="submitTopic">Create</button></a>
-    <a href="/topics/all" class="btn btn-primary">Back</a>
-    </div>
-</form>
-=======
+
+
 <form>
 	<textarea class="form-control" id="replyBody" placeholder="Write your answer"></textarea>
 	<input class="form-control" id="topicId" type="hidden" value=<%= req.param("id") %> /><br>
@@ -55,4 +25,4 @@
 </form>
 <br>
  <a href="/topics/all" class="btn btn-primary">Back</a>
->>>>>>> 7c80c58cdcb6d966617a0b7bbcde90d1663b2964
+

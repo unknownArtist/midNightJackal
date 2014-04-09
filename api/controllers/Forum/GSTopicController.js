@@ -2,8 +2,8 @@ module.exports = {
 
   index: function(req, res) {
     GSTopic.find().exec(function(err, topics){
-       res.json(topics);
-       // res.view("gstopic/topics",{topics: topics });
+       // res.json(topics);
+       res.view("gstopic/topics",{topics: topics });
     });
   },
   showTopic: function(req, res){
