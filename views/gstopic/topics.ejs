@@ -1,11 +1,31 @@
 <div>
+<<<<<<< HEAD
+  
+
+  
+  <a id="createTopButton" href="/topic/new" class="btn btn-success">Create New Topic</a>
+  
+  
+=======
   <h2>All Topics</h2>
   <a id="createTopButton" href="/topic/new" class="btn btn-success">Create New Topic</a>
+>>>>>>> 7c80c58cdcb6d966617a0b7bbcde90d1663b2964
   <ul class="list-unstyled">
   	<% if(topics.length > 0) { %>
     	<% _.each(topics, function (topic) { %>
     	
+<<<<<<< HEAD
+      <li class="well well-sm"> <div id="notify_box"><h1 class ="notify">0</h1> <div class="notify">Answer</div> </div><a id = "Q_asked_color" href="/topic/<%= topic.id %>/<%=topic.slug%>"><%= topic.title %>?</a><p class="pull-right">Viewing 20 people</p>  
+
+      <div class = "posted" >
+
+      <span class = "detail">Asked by: <a href="#">SomeOne</a> </span> 
+      <span class = "detail"> Category: <a href="#">  Technology</a> </span> 
+      <span class = "detail">Tags: <a href="#">www.google.com</a> </span> 
+      <span class = "detail"> Posted:31-3-2014 </span> </div> </li>
+=======
       <li class="well well-sm"><a href="/topic/<%= topic.id %>/<%=topic.slug%>"><%= topic.title %></a><p class="pull-right">Viewing 20 people</p>  <div class = "posted" >Posted:31-3-2014</div></li>
+>>>>>>> 7c80c58cdcb6d966617a0b7bbcde90d1663b2964
 
     	<% }) %>
     <% } else { %>
