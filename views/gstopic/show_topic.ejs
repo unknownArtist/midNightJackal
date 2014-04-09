@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class = "container_for_sign_in_up">
 	<div class = "sign">
     <button class="btn btn-success" id="submitTopic">Sign up</button>
@@ -22,6 +23,9 @@
 
 
 <ul class="list-unstyled text-fields">
+=======
+<ul>
+>>>>>>> 7c80c58cdcb6d966617a0b7bbcde90d1663b2964
 	<% _.each(topic, function(topic){ %>
 		<li><%= topic.title %></li>
 		<%= topic.body %>
@@ -34,6 +38,7 @@
 		<%= reply.body %><br>
 	<% }) %>
 </div>
+<<<<<<< HEAD
 <form class = "text-fields">
 	<textarea class="form-control" id="replyBody" placeholder="Write your answer"></textarea>
 	<input class="form-control" id="topicId" type="hidden" value=<%= req.param("id") %> /><br>
@@ -42,3 +47,12 @@
     <a href="/topics/all" class="btn btn-primary">Back</a>
     </div>
 </form>
+=======
+<form>
+	<textarea class="form-control" id="replyBody" placeholder="Write your answer"></textarea>
+	<input class="form-control" id="topicId" type="hidden" value=<%= req.param("id") %> /><br>
+	<button class="btn btn-success" id="writeAnswer">Answer</button>
+</form>
+<br>
+ <a href="/topics/all" class="btn btn-primary">Back</a>
+>>>>>>> 7c80c58cdcb6d966617a0b7bbcde90d1663b2964

@@ -1,14 +1,19 @@
+<<<<<<< HEAD
 .container_for_sign_in_up {
 	width: 1140px;
 	height: 200px;
 }
 
 #createTopButton, .btn.btn-success,.well.well-sm{
+=======
+#createTopButton, .well.well-sm{
+>>>>>>> 7c80c58cdcb6d966617a0b7bbcde90d1663b2964
 	margin-bottom: 10px;
 }
 /*.well.well-sm {
 	margin-bottom: 10px;
 }*/
+<<<<<<< HEAD
 .posted, .btn.btn-success {
 	margin-top: 20px;
 }
@@ -53,4 +58,8 @@
 }
 .btn {
 	vertical-align: baseline;
+=======
+.posted {
+	margin-top: 20px;
+>>>>>>> 7c80c58cdcb6d966617a0b7bbcde90d1663b2964
 }
