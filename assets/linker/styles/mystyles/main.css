@@ -1,0 +1,56 @@
+.container_for_sign_in_up {
+	width: 1140px;
+	height: 200px;
+}
+
+#createTopButton, .btn.btn-success,.well.well-sm{
+	margin-bottom: 10px;
+}
+/*.well.well-sm {
+	margin-bottom: 10px;
+}*/
+.posted, .btn.btn-success {
+	margin-top: 20px;
+}
+#notify_box {
+	float: left;
+	width:60px;
+	height: 60px;
+	border-radius: 5px;
+	background-color: #69CCF6;
+	margin-right: 10px;
+	color:white;
+}
+.notify {
+	margin:0;
+	text-align: center;
+}
+.detail {
+	font-size: 12px;
+	color:#D6B018;
+	margin-right: 10px;
+}
+#Q_asked_color {
+   color:#69CCF6;
+   font-weight: bold;
+}
+.sign{
+	width: 350px;
+	height: 250px;
+	float:left;
+}
+.other_services {
+	background-color:#69CCF6;
+	width:120px;
+	height: 27px;
+	margin-top: 5px;
+	text-align: center;
+
+}
+.text-fields {
+	width: 700px;
+	color:#69CCF6;
+}
+.btn {
+	vertical-align: baseline;
+}
